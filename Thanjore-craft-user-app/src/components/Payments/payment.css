@@ -1,0 +1,12 @@
+.paymentOptionCard{
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+  }
+
+  .cardInputFiled{
+      border: none !important;
+      border-bottom: 1px solid black !important;
+      height: 80px;
+      width:100%;
+  }

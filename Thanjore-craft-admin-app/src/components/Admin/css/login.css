@@ -1,0 +1,179 @@
+  /* Login page */
+
+  .headerLoginText{
+    font-family: 'Roboto' !important;
+}
+.loginLinkInReg,.loginLinkInReg:hover{
+    text-decoration: none;
+    color: #0163b2;
+    cursor: pointer;
+
+}
+.ErrorMessagePanel{
+  color: red ;
+  margin-left: 10px !important;
+}
+.loginHr{
+    width: 20%;
+    float: left;
+}
+.loginBtn{
+    width: 100% !important;
+    background-color: #0163b2 !important;
+    border: 1px solid #0163b2 !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+.modal{
+  top:40px !important;
+}
+.loginInputpanel {
+    border: none !important;
+    border-bottom: 1px solid #ced4da !important;
+    border-radius: 0.25rem;
+  }
+
+
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    .loginCard{
+        border-radius: 15px !important;
+        height: 800px !important; 
+        width: 60rem !important; 
+        padding-left: 15% !important;
+       padding-top: 4% !important; 
+       font-family: 'karla' !important;
+   }
+   .loginDiv{
+       padding-left: 20%;
+       padding-top: 3%; 
+       background-color: #0163b2;
+       width: 100%;
+       height: 1000px;
+   }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .loginCard{
+        height: 700px !important; 
+        width: 60rem !important; 
+        padding-left: 15% !important;
+       padding-top: 4% !important; 
+   }
+   .loginDiv{
+        padding-left: 20%;
+       padding-top: 5%; 
+       background-color: #0163b2;
+       width: 100%;
+       height: 1000px;
+   }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .loginCard{
+        height: 1000px !important; 
+        width: 100% !important; 
+        padding-left: 25% !important;
+       padding-top: 4% !important; 
+   }
+    .loginDiv{
+        background-color: none;
+        
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .loginCard{
+        height: 1000px !important; 
+        width: 100% !important;
+   }
+    .loginDiv{
+        background-color: none;
+        
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .loginDiv{
+        background-color: none;
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .loginCard{
+        border: none !important;
+        border-radius: none !important;
+        height: 680px !important;
+        padding-top: 2% !important; 
+        
+   }
+    .loginDiv{
+        background-color: none;
+        
+    }
+    .loginHr{
+        width: 20%;
+        float: left;
+        background-color: white;
+        color: white !important;
+    }
+    .loginLinkInReg{
+        text-decoration: none;
+        color: #0163b2 !important;
+        font-weight: 600;
+        font-size: large;
+    
+    }
+    .loginBtn{
+        width: 100% !important;
+        border: 1px solid white !important;
+        background-color: none !important;
+        color: white !important;
+    }
+    
+  }

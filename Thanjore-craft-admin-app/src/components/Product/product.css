@@ -1,0 +1,18 @@
+.productImage{
+    width:200px;
+    height: 200px;
+    align-items: center;
+}
+.productImageOne{
+    width:400px;
+    height:400px;
+}
+.productATag,.productATag:hover{
+    text-decoration: none;
+    color: black;
+}
+.productCardBox{
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+  }

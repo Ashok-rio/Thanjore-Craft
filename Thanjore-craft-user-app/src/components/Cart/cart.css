@@ -1,0 +1,36 @@
+.cardImage{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -150px;
+    width:300px;
+    height: 500px;
+}
+.cardImageDiv{
+    padding: 2%;
+    height:500px;
+    border: 1px solid black;
+}
+
+.withratingColor{
+    color:orange !important
+}
+.withoutRatingColor{
+    color: black !important
+}
+.cartFontText{
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.cartCardBox{
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+  }

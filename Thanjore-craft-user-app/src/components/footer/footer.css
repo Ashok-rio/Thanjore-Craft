@@ -1,0 +1,18 @@
+.footer-home{
+    background-color: #ddcc70;
+    height: auto;
+    padding: 2%;
+}
+.footer-heading{
+    font-weight: 800;
+    list-style: none;
+}
+.footer-list{
+    font-size: 15px;
+    list-style: none;
+
+}
+.ul-footer{
+    text-align: left;
+    line-height: 30px;
+}

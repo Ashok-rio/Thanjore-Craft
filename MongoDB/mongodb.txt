@@ -1,0 +1,23 @@
+1)db.order.aggregate([{$match":{"OrderDate":{"$lte":"2020-6-1","$gte": "2020-7-1"}}}]) 
+2)db.product.aggregate([{$project:{ 'name': 1,ratingGte10: { $gte: [ "$rating", 10] },_id: 0 }}]);
+3)db.order.aggregate([{$match:{'delivery':{'DeliveryAt':"Coimbatore"}}},{$project:{product:1,_id:0}}]).pretty();
+4)db.product.find( { name: { $regex: /^A/i } } ).pretty()
+5)db.product.aggregate([{$group: { _id: null,"TotalProduct": { $sum:"$quantity"}} } ] )
+6)db.product.aggregate([{$match:{quantity:{$gt:100}}},{$project:{name:1,_id:0}}]).pretty();
+7)db.order.aggregate([{$match:{$or:[{'delivery':{'DeliveryAt':"Coimbatore"}},{'delivery':{'DeliveryAt':"Chennai"}]}},{$project:{user:1,_id:0}}]).pretty();
+8)
+9)db.order.aggregate( [{$bucket: {groupBy: "$user.district",boundaries: [ Coimbatore,Chennai, Madurai, Tirupur ],default:"Other",output: {"count": { $sum: 1 },"artists" :{$push: {"district":'$user,district'},"customer": "$user.name"}}}}},{$match:{ count: {$gt: 5}}}])
+10)
+11)
+12)
+13)db.order.aggregate([{ $sort:{OrderDate:-1}}, { $limit : 1 }]);
+14)db.order.aggregate([{ $match:{"user.name":'Ranjith'}}]).pretty();
+15)
+16)db.order.aggregate([ { $match : { orders : {$gt:1000} }}]).pretty();
+17)
+18)
+
+19)i)db.product.aggregate([{ $project: {'name':1,'quantity':1,'price':1,quantityGte10:{$gt:["$quantity",0]}}},{ $sort : {quantity: 1} }])
+   ii)db.product.aggregate([{ $project: {'name':1,'quantity':1,'price':1,quantityGte10:{$gt:["$quantity",0]}}},{ $sort : {quantity: -1} }]) 		
+20)i) db.order.aggregate({ $match: { "payment":"CardPayment" }});
+   ii)db.order.aggregate( [ { $match: { "payment":"CardPayment" },{ $group: { _id: null, count: { $sum: 1 } } }]);
